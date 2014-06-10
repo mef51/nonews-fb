@@ -6,7 +6,7 @@
   "permissions": [],
   "content_scripts": [
     {
-      "matches": ["*://*.facebook.com/", "*://*.facebook.com/home.php"],
+      "matches": ["*://*.facebook.com/", "*://*.facebook.com/home.php", "*://*.facebook.com/?*"],
       "js": ["main.js"],
       "run_at": "document_end",
       "all_frames": true
