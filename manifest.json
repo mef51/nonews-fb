@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "No News Facebook",
+  "description": "Remove the news feed and sidebar from the Facebook homepage.",
+  "version": "0.1",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/", "*://*.facebook.com/home.php"],
+      "js": ["main.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
